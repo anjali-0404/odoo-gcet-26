@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens taken from the Excalidraw mockup:
+ * dark canvas (#121212), coral accent (#ff8383), light-grey text (#d3d3d3).
+ * Use them as Tailwind utilities, e.g. bg-surface, text-accent, border-border.
+ */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --color-bg: #121212;
+  --color-surface: #1a1a1a;
+  --color-surface-2: #222222;
+  --color-border: #2e2e2e;
+
+  --color-accent: #ff8383;
+  --color-accent-hover: #ff9d9d;
+  --color-accent-muted: #ff83831f;
+
+  --color-text: #d3d3d3;
+  --color-text-strong: #f2f2f2;
+  --color-muted: #8c8c8c;
+
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-info: #60a5fa;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}

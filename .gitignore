@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Environment files (commit only .env.example)
+.env
+.env.*
+!.env.example
+
+# Build output and caches
+dist/
+build/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Excluded project metadata & prompt assets
+.gitattributes
+Problem Statement*
+prompt.txt
+StockSense.png
+StockSense.svg
+HANDOFF.md
+Handoff.md
+
